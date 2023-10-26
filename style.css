@@ -1,0 +1,62 @@
+@font-face {
+    font-family: BKoodak;
+    src: url(./fonts/BFonts/BKoodkBd.ttf);
+}
+
+@font-face {
+    font-family: BTitr;
+    src: url(./fonts/BFonts/BTitrBd.ttf);
+}
+
+body {
+    width: 90%;
+    max-width: 480px;
+    margin: 15px auto 0 auto;
+    font-family: BKoodak, Arial, sans-serif;
+}
+
+.titr {
+    font-family: BTitr, Arial, sans-serif;
+}
+
+table {
+    display: none;
+}
+
+
+:is(p, span) {
+    display: block;
+    font-family: BKoodak, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: justify;
+    text-indent: 7%;
+}
+
+li> :where(h1, h2, h3, h4) {
+    font-family: BTitr, Arial, sans-serif;
+    margin: 0 2px 5px 0;
+}
+
+nav ul>a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul>a:hover {
+    color: teal;
+}
+
+ul {
+    padding-right: 6%;
+}
+
+td {
+    width: 30px;
+    background-color: lightblue;
+}
+
+summary:hover {
+    color: purple;
+    cursor: pointer;
+}
