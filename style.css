@@ -10,9 +10,25 @@
 
 body {
     width: 90%;
-    max-width: 480px;
-    margin: 15px auto 0 auto;
+    /* margin: 20px auto 120px auto; */
     font-family: BKoodak, Arial, sans-serif;
+    /* position: relative; */
+}
+
+.max480 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+
+}
+
+iframe {
+    width: 100%;
+    /* margin: auto;
+    padding: auto;
+    border: auto; */
+    /* max-width: 1000px; */
+
 }
 
 .titr {
@@ -31,6 +47,7 @@ table {
     line-height: 15px;
     text-align: justify;
     text-indent: 7%;
+    padding-top: 2px;
 }
 
 li> :where(h1, h2, h3, h4) {
