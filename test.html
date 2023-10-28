@@ -4,16 +4,6 @@
     <meta charset="UTF-8">
     <title>پیشنهاده</title>
     <link rel="stylesheet" href="./style.css">
-    <script>
-        function setIframeHeight() {
-            const iframe = document.getElementById('ifrm');
-            if (iframe) {
-                iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-            }
-        }
-        document.getElementById('ifrm').onload = setIframeHeight;
-        setIframeHeight();
-    </script>
 </head>
 
 
@@ -26,21 +16,24 @@
                 پروژه‌ها و کارکنان شرکت
             </h3>
         </center>
-        <h3 class="titr">مقدمه</h3>
-        <p> <!-- intro -->
-            در دنیای کسب و کار پویا و رقابتی امروزی،
-            مدیریت صحیح کارکنان و پروژه‌ها یکی از مهمترین عوامل برای
-            موفقیت و رشد پایدار شرکت‌ها می‌باشد. با افزایش تعداد و پیچیدگی
-            پروژه‌ها و نیازمندی‌های متنوع مشتریان، شرکت‌ها نیاز به یک راهکار
-            کارآمد و یکپارچه برای این موضوع پیدا می‌کنند.
-            این برنامه با هدف ارائه یک
-            <a href="#definitions">بستر</a>
-
-            قدرتمند و
-            یکپارچه برای شرکت‌ها طراحی و توسعه داده شده است
-            و امکان مدیریت بهینه کارکنان،
-            پروژه‌ها و تعامل با مشتریان را فراهم می‌کند.
-        </p>
+        <details open>
+            <summary>
+                مقدمه
+            </summary>
+            <p> <!-- intro -->
+                در دنیای کسب و کار پویا و رقابتی امروزی،
+                مدیریت صحیح کارکنان و پروژه‌ها یکی از مهمترین عوامل برای
+                موفقیت و رشد پایدار شرکت‌ها می‌باشد. با افزایش تعداد و پیچیدگی
+                پروژه‌ها و نیازمندی‌های متنوع مشتریان، شرکت‌ها نیاز به یک راهکار
+                کارآمد و یکپارچه برای این موضوع پیدا می‌کنند.
+                این برنامه با هدف ارائه یک
+                <a href="#definitions">بستر</a>
+                قدرتمند و
+                یکپارچه برای شرکت‌ها طراحی و توسعه داده شده است
+                و امکان مدیریت بهینه کارکنان،
+                پروژه‌ها و تعامل با مشتریان را فراهم می‌کند.
+            </p>
+        </details>
         <nav>
             <h2 class="titr">فهرست مطالب</h2>
             <ul>
@@ -56,22 +49,27 @@
                 </a>
                 <a href="#goals">
                     <li>
-                        <h4>اهداف</h4>
+                        <h4>اهداف و اهمیت پروژه</h4>
                     </li>
                 </a>
                 <a href="#details">
                     <li>
-                        <h4>جزییات و مشخصات فنی</h4>
+                        <h4>جزییات و تعهدات</h4>
+                    </li>
+                </a>
+                <a href="#specs">
+                    <li>
+                        <h4>مشخصات فنی</h4>
                     </li>
                 </a>
                 <a href="#schedule">
                     <li>
-                        <h4>زمان بندی</h4>
+                        <h4>زمان‌بندی</h4>
                     </li>
                 </a>
                 <a href="#cost">
                     <li>
-                        <h4>هزینه پیاده سازی</h4>
+                        <h4>هزینۀ پیاده‌سازی</h4>
                     </li>
                 </a>
                 <a href="#aboutus">
@@ -83,13 +81,13 @@
         </nav>
     </div>
     <div class="max480">
-        <details id="definitions" open>
+        <details id="definitions">
             <summary>
                 تعاریف
             </summary>
             <p></p>
         </details>
-        <details id="intro" open>
+        <details id="intro">
             <summary>
                 معرفی پروژه
             </summary>
@@ -114,7 +112,7 @@
                 می‌توانند از ابزار ردیاب در بخش های مربوط به سفارش‌شان استفاده کنند.
             </p>
         </details>
-        <details id="goals" open>
+        <details id="goals">
             <summary>
                 اهداف
             </summary>
@@ -145,32 +143,36 @@
                 </li>
             </ul>
         </details>
-        <details id="details" open>
-            <summary>
-                جزییات و مشخصات فنی
-            </summary>
+        <details id="details">
+            <summary> جزییات و تعهدات</summary>
             <p></p>
         </details>
-    </div>
-    <details id="schedule" open>
-        <summary class="max480"">
-                زمان بندی
-            </summary>
-            <div>
-                <center>
-                    <iframe src=" ./gantt.html" scrolable="no" frameborder="0" id="ifrm"></iframe>
-            </center>
-
-    </details>
-    <div class="max480">
-        <details id="cost" open>
+        <details id="specs">
             <summary>
-                هزینه پیاده سازی
+                مشخصات فنی
+            </summary>
+            <p class="eng" style="line-height: 17px;">
+                Python3.10, HTML5, CSS4, JavaScript
+                <span class="eng" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Django v4.2, Jinja v2, Bootstrap 5
+                <span class="eng" />
+            </p>
+        </details>
+        <details id="schedule">
+            <summary>
+                زمان‌بندی
+            </summary>
+            <iframe src=" ./gantt.html" scrolable="no" frameborder="0" id="ifrm"></iframe>
+        </details>
+        <details id="cost">
+            <summary>
+                هزینۀ پیاده‌سازی
             </summary>
             <p> </p>
         </details>
 
-        <details id="aboutus" open>
+        <details id="aboutus">
             <summary>
                 درباره ما
             </summary>
@@ -188,6 +190,10 @@
     }
     document.getElementById('ifrm').onload = setIframeHeight;
     setIframeHeight();
+    const ids = ["schedule",];
+    ids.forEach(function (idd) {
+        document.getElementById(idd).open = 1;
+    });
 </script>
 
 </html>
