@@ -1,7 +1,5 @@
 @font-face {
     font-family: BKoodak;
-    /* src: url(./fonts/BFonts/BBadrBd.ttf); */
-    /* src: url(./fonts/BFonts/BLotusBd.ttf); */
     src: url(./fonts/BFonts/BKoodkBd.ttf);
 }
 
@@ -12,9 +10,7 @@
 
 body {
     width: 90%;
-    /* margin: 20px auto 120px auto; */
     font-family: BKoodak, Arial, sans-serif;
-    /* position: relative; */
 }
 
 iframe {
@@ -66,11 +62,6 @@ nav ul>a:hover {
 
 ul {
     padding-right: 6%;
-}
-
-td {
-    width: 30px;
-    background-color: lightblue;
 }
 
 summary:hover {
