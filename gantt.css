@@ -65,7 +65,7 @@ body {
     content: '';
     position: absolute;
     right: 0;
-    height: 285px;
+    height: 250px;
     border-right: 2px solid var(--divider);
 }
 
