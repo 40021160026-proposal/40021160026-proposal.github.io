@@ -30,6 +30,11 @@ a {
     color: inherit;
 }
 
+ul li~img {
+    width: 30px;
+    position: fixed;
+}
+
 body {
     background: var(--body);
     font-size: 13px;

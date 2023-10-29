@@ -34,6 +34,16 @@
                 پروژه‌ها و تعامل با مشتریان را فراهم می‌کند.
             </p>
         </details>
+        <details open>
+            <summary>دربارۀ ما</summary>
+            <p>
+                اینجانب ماهان صفایی،
+                دانشجوی مهندسی کامپیوتر دانشگاه کاشان،
+                فعال در حوزۀ توسعه وب و خزش داده،
+                دارای سابقه کارآموزی و
+                انجام چند پروژۀ آزاد.
+            </p>
+        </details>
         <nav>
             <h2 class="titr">فهرست مطالب</h2>
             <ul>
@@ -72,20 +82,21 @@
                         <h4>هزینۀ پیاده‌سازی</h4>
                     </li>
                 </a>
-                <a href="#aboutus">
+                <a href="#contact">
                     <li>
-                        <h4>درباره ما</h4>
+                        <h4>ارتباط با ما</h4>
                     </li>
                 </a>
             </ul>
         </nav>
-    </div>
-    <div class="max480">
-        <details id="definitions">
+        <details id="definitions" open>
             <summary>
                 تعاریف
             </summary>
-            <p></p>
+            <p>بستر:</p>
+            <p>بستر:</p>
+            <p>بستر:</p>
+            </ul>
         </details>
         <details id="intro">
             <summary>
@@ -119,8 +130,7 @@
             <p>
                 از اهداف پروژه می‌توان موارد زیر را نام برد:
             </p>
-            <ul style="padding-right: 12%; 
-            font-size:14px; line-height:17px">
+            <ul style="padding-right: 12%;">
                 <li>
                     طراحی رابط کاربری حرفه‌ای، مناسب توسعه‌دهندگان و باقی اعضای شرکت
                 </li>
@@ -147,16 +157,35 @@
             <summary> جزییات و تعهدات</summary>
             <p></p>
         </details>
-        <details id="specs">
+        <details id="specs" open>
             <summary>
                 مشخصات فنی
             </summary>
             <p class="eng" style="line-height: 17px;">
-                Python3.10, HTML5, CSS4, JavaScript
+                <span>زبان‌های توسعه: </span>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                &emsp;&emsp;&emsp;&emsp;&emsp;
+                Python 3.10, HTML 5
                 <span class="eng" />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Django v4.2, Jinja v2, Bootstrap 5
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                &emsp;&emsp;&emsp;&emsp;
+                CSS 4, JavaScript
+                <span>ابزار‌های توسعه: </span>
                 <span class="eng" />
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                &emsp;&nbsp;&nbsp;
+                Django 4.2, Bootstrap 5
+                <span>پایگاه داده: </span>
+                <span class="eng" />
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                &nbsp;&nbsp;&nbsp;
+                SQLite 3
+                <span /><br /><span />
+                لازم به ذکر است مجری طرح هیچ‌گونه
+                تعهدی نسبت به ارائه سرور ندارد
+                و استقرار برروی سرور کارفرما
+                فقط یک بار توسط مجری انجام می‌شود.
             </p>
         </details>
         <details id="schedule">
@@ -172,9 +201,9 @@
             <p> </p>
         </details>
 
-        <details id="aboutus">
+        <details id=contact">
             <summary>
-                درباره ما
+                ارتباط با ما
             </summary>
             <p> </p>
         </details>
@@ -190,9 +219,8 @@
     }
     document.getElementById('ifrm').onload = setIframeHeight;
     setIframeHeight();
-    const ids = ["schedule",];
-    ids.forEach(function (idd) {
-        document.getElementById(idd).open = 1;
+    document.querySelectorAll("details[id]").forEach(function (elem) {
+        elem.open = 1;
     });
 </script>
 
