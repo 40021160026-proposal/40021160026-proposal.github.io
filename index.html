@@ -10,6 +10,19 @@
 <body dir="rtl">
     <div class="max480">
         <center>
+            <div style="color: red;">
+                تعاریف
+                <br />
+                متدولوژی
+                <br />
+                دوتای اخر
+                <br />
+                چالش ها
+                <br />
+                امضا
+                <br />
+
+            </div>
             <h4>به نام خدا</h4>
             <h3 class="titr">
                 پیشنهاده‌ی برنامه‌ی تحت وب مدیریت
@@ -20,6 +33,7 @@
             <summary>
                 مقدمه
             </summary>
+            <hr />
             <p> <!-- intro -->
                 در دنیای کسب و کار پویا و رقابتی امروزی،
                 مدیریت صحیح کارکنان و پروژه‌ها یکی از مهمترین عوامل برای
@@ -36,6 +50,7 @@
         </details>
         <details open>
             <summary>دربارۀ ما</summary>
+            <hr />
             <p>
                 اینجانب ماهان صفایی،
                 دانشجوی مهندسی کامپیوتر دانشگاه کاشان،
@@ -46,6 +61,7 @@
         </details>
         <nav>
             <h2 class="titr">فهرست مطالب</h2>
+            <hr />
             <ul>
                 <a href="#definitions">
                     <li>
@@ -93,24 +109,61 @@
             <summary>
                 تعاریف
             </summary>
-            <p>بستر:</p>
-            <p>بستر:</p>
-            <p>بستر:</p>
+            <hr />
+            <dl>
+                <dt>
+                    بستر
+                </dt>
+                <dd>
+                    پلتفرم
+                </dd>
+
+                <dt>
+                    ردیاب
+                </dt>
+                <dd>
+                    tracker
+                </dd>
+
+                <dt>
+                    باگ
+                </dt>
+                <dd>
+                    عیب برنامه
+                </dd>
+
+                <dt>
+                    دیوارچه
+                </dt>
+                <dd>
+                    panel
+                </dd>
+
+                <dt>
+                    ابرکاربر
+                </dt>
+                <dd>
+                    superuser
+                </dd>
+
+                <dt>
+                    تارگردان
+                </dt>
+                <dd>
+                    admin
+                </dd>
+            </dl>
             </ul>
         </details>
         <details id="intro">
             <summary>
                 معرفی پروژه
             </summary>
+            <hr />
             <p>
-                نرم‌افزار مورد نظر برای مدیریت بهینه ی وظایف کارکنان شرکت استفاده می‌شود.
-                برای کارکنان شرکت بخش پر کردن ساعت‌های کاری، اضافه‌کاری و غیر‌کاری
-                (<a href="#definitions">برگۀ شد‌و‌آمد</a>)
-                تعریف می‌شود که مدیران مربوط با
-                استفاده از این بخش، فعالیت‌های کارکنان را رصد می‌کنند.
-                <span />
-                همچنین این برنامه دارای یک ابزار قدرتمند
-                (<a href="#details">ردیاب</a>) است
+                این برنامه دارای یک ابزار قدرتمند
+                به اسم
+                <a href="#tracker">ردیاب</a> است
                 که به شرکت‌ها و توسعه‌دهندگان کمک می‌کند تا مشکلات،
                 <a href="#definitions">باگ‌ها</a>
                 و وظایف مربوط به پروژه‌های خود را مدیریت و ثبت کنند.
@@ -127,6 +180,7 @@
             <summary>
                 اهداف و اهمیت پروژه
             </summary>
+            <hr />
             <div data-cc="ahdaf">
                 <p>
                     از اهداف پروژه می‌توان موارد زیر را نام برد:
@@ -162,18 +216,19 @@
         </details>
         <details id="details">
             <summary>جزییات و تعهدات</summary>
+            <hr />
             <div>
                 <p>تعهدات اجرایی توسط مجری به شرح زیر می‌باشد:</p>
                 <ul>
                     <li>
-                        ارائه مستندات کامل از پروژه
+                        ارائه‌ی مستندات کامل از پروژه
                     </li>
                     <li>
-                        ارائه‌ی دیوارچۀ کاربری برای کاربران زیر:
+                        ارائه‌ی <a href="#definitions">دیوارچۀ</a> کاربری برای کاربران زیر:
                         <ul>
                             <li>
                                 <details open>
-                                    <summary>ابرکاربر</summary>
+                                    <summary><a href="#definitions">ابرکاربر</a></summary>
                                     <ul>
                                         <li>
                                             دسترسی کامل به پایگاه داده
@@ -187,7 +242,7 @@
                             </li>
                             <li>
                                 <details open>
-                                    <summary>تارگردان</summary>
+                                    <summary><a href="#definitions">تارگردان</a></summary>
                                     <ul>
                                         <li>
                                             کنترل دسترسی‌های سایر کاربران
@@ -257,6 +312,9 @@
                             </li>
                         </ul>
                     </li>
+                    <li id="tracker" ‌>
+                        ارائه‌ی بخش ردیاب
+                    </li>
                 </ul>
             </div>
         </details>
@@ -264,37 +322,42 @@
             <summary>
                 مشخصات فنی
             </summary>
-            <p class="eng" style="line-height: 17px;">
-                <span>زبان‌های توسعه: </span>
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                &emsp;&emsp;&emsp;&emsp;&emsp;
-                Python 3.10, HTML 5
-                <span class="eng" />
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                &emsp;&emsp;&emsp;&emsp;
-                CSS 4, JavaScript
-                <span>ابزار‌های توسعه: </span>
-                <span class="eng" />
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                &emsp;&nbsp;&nbsp;
-                Django 4.2, Bootstrap 5
-                <span>پایگاه داده: </span>
-                <span class="eng" />
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                &nbsp;&nbsp;&nbsp;
-                SQLite 3
-                <span /><br /><span />
-                لازم به ذکر است مجری طرح هیچ‌گونه
-                تعهدی نسبت به ارائه سرور ندارد
-                و استقرار برروی سرور کارفرما
-                فقط یک بار توسط مجری انجام می‌شود.
-            </p>
+            <hr />
+            <div class='container'>
+                <span class="rtl">
+                    زبان‌های توسعه:
+                </span>
+                <span class="ltr">
+                    Python 3.10, HTML 5,
+                    CSS 4, JavaScript
+                </span>
+                <br />
+                <span class="rtl">
+                    ابزار‌های توسعه:
+                </span>
+                <span class="ltr">
+                    Django 4.2, Bootstrap 5
+                </span>
+                <br />
+                <span class="rtl">
+                    پایگاه داده:
+                </span>
+                <span class="ltr">
+                    SQLite 3
+                </span>
+            </div>
+            <span /><br /><span />
+            لازم به ذکر است مجری طرح هیچ‌گونه
+            تعهدی نسبت به ارائه سرور ندارد
+            و استقرار برروی سرور کارفرما
+            فقط یک بار توسط مجری انجام می‌شود.
         </details>
-        <details id="schedule">
+        <details id="schedule" open>
             <summary>
                 زمان‌بندی
             </summary>
+            <hr />
+
             <p>
                 از متدولوژی آبشاری استفاده شده
             </p>
@@ -304,6 +367,8 @@
             <summary>
                 هزینۀ پیاده‌سازی
             </summary>
+            <hr />
+
             <p> </p>
         </details>
 
@@ -311,6 +376,7 @@
             <summary>
                 ارتباط با ما
             </summary>
+            <hr />
             <p> </p>
         </details>
     </div>
