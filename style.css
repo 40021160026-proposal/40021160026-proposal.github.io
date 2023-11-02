@@ -24,7 +24,7 @@ iframe {
 }
 
 .titr,
-summary {
+:not(ul>li *)>summary {
     font-family: BTitr, Arial, sans-serif;
 }
 
@@ -36,11 +36,11 @@ details {
     margin-bottom: 3px;
 }
 
-#goals div li {
+details[id] div li {
     line-height: 22px;
 }
 
-:is(p, span) {
+:is(p, span, .pspan) {
     display: block;
     font-family: BKoodak, Arial, sans-serif;
     font-size: 16px;
@@ -49,6 +49,31 @@ details {
     text-indent: 7%;
     padding-top: 2px;
 }
+
+#details>div>p {
+    text-indent: calc(7% / 2);
+}
+
+#details>div ul {
+    list-style: inside square;
+    line-height: 23px;
+}
+
+#details>div>ul>li::marker {
+    content: '🖋 ‌ ‌ ‌‌‌ ‌ ‌';
+    font-size: inherit;
+}
+
+#details>div li ::marker {
+    content: '';
+}
+
+/* #details>div li:has(>details) {} */
+
+#details>div details ::marker {
+    content: initial;
+}
+
 
 summary,
 li> :where(h1, h2, h3, h4) {
