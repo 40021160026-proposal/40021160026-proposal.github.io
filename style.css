@@ -36,6 +36,10 @@ details {
     margin-bottom: 3px;
 }
 
+#goals div li {
+    line-height: 22px;
+}
+
 :is(p, span) {
     display: block;
     font-family: BKoodak, Arial, sans-serif;
