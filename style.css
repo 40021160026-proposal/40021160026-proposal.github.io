@@ -47,7 +47,7 @@ details {
 }
 
 details[id] div li {
-    line-height: 22px;
+    line-height: 23px;
 }
 
 :is(p, span, .pspan) {
@@ -100,12 +100,26 @@ details[id] div li {
 }
 
 #details>div details ul>li::marker {
-    font-size: 30;
+    font-size: 30px;
 }
 
 #details>div ul:has(>li>details) {
     padding-inline-start: 24px;
 
+}
+
+details>summary[hidden]+ul>li {
+    margin-top: 15px;
+    margin-bottom: 18px;
+}
+
+details>summary[hidden]+ul ul li {
+    list-style-type: disc;
+    line-height: 23px;
+}
+
+#tracker ul {
+    padding-inline-start: 32px;
 }
 
 summary,

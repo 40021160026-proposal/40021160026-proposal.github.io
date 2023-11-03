@@ -69,7 +69,6 @@ body {
 
 .chart-wrapper .chart-values li {
     flex: 1;
-    /* text-align: center; */
 }
 
 .chart-wrapper .chart-values li:not(:last-child) {
