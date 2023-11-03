@@ -38,6 +38,11 @@ dt {
     margin-bottom: 6px;
 }
 
+dd {
+    line-height: 20px;
+    text-align: justify;
+}
+
 hr {
     border: 1px solid var(--col);
 }
