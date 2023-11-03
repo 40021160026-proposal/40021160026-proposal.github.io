@@ -13,6 +13,8 @@
 }
 
 body {
+    margin-top: 100px;
+    margin-bottom: 160px;
     width: 90%;
     font-family: BKoodak, Arial, sans-serif;
 }
@@ -130,10 +132,6 @@ details>summary[hidden]+ul ul li {
 summary,
 li> :where(h1, h2, h3, h4) {
     margin: 0 2px 5px 0;
-}
-
-body {
-    margin-top: 100px;
 }
 
 
