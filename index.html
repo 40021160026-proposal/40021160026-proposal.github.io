@@ -22,7 +22,7 @@
             </summary>
             <hr />
             <p> <!-- intro -->
-                در دنیای کسب و کار پویا و رقابتی امروزی،
+                در دنیای کسب‌و‌کار پویا و رقابتی امروزی،
                 مدیریت صحیح کارکنان و پروژه‌ها یکی از مهمترین عوامل برای
                 موفقیت و رشد پایدار شرکت‌ها می‌باشد. با افزایش تعداد و پیچیدگی
                 پروژه‌ها و نیازمندی‌های متنوع مشتریان، شرکت‌ها نیاز به یک راهکار
@@ -146,7 +146,7 @@
             </dl>
             </ul>
         </details>
-        <details id="intro">
+        <details id="intro" open>
             <summary>
                 معرفی پروژه
             </summary>
@@ -171,7 +171,7 @@
                 روند پروژه را رهگیری کنند.
             </p>
         </details>
-        <details id="goals">
+        <details id="goals" open>
             <summary>
                 اهداف و اهمیت پروژه
             </summary>
@@ -209,7 +209,7 @@
                 </p>
             </div>
         </details>
-        <details id="details">
+        <details id="details" open>
             <summary>جزییات و تعهدات</summary>
             <hr />
             <div>
@@ -472,7 +472,7 @@
                 درمورد ظاهر وب‌گاه می‌باشد.
             </p>
         </details>
-        <details id="cost">
+        <details id="cost" open>
             <summary>
                 هزینۀ پیاده‌سازی
             </summary>
@@ -492,7 +492,7 @@
 
             </p>
         </details>
-        <details id=contact">
+        <details id=contact" open>
             <summary>
                 ارتباط با ما
             </summary>
@@ -537,7 +537,7 @@
     }
     document.getElementById('ifrm').onload = setIframeHeight;
     setIframeHeight();
-    document.querySelectorAll("details[id]").forEach(function (elem) {
+    document.querySelectorAll("details").forEach(function (elem) {
         elem.open = 1;
     });
 </script>
